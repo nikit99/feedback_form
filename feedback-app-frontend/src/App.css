@@ -1,0 +1,233 @@
+/* Main feedback container */
+.feedback-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  padding: 30px 40px;
+  gap: 1px; /* Added gap between feedback-left and feedback-right */
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+.right{
+    text-align: center;
+}
+
+/* Feedback-left styling */
+.feedback-left {
+  flex: 1;
+  max-width: 20%;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px; /* Added margin for better spacing on top and sides */
+}
+
+.feedback-left-text{
+  font-family: 'Arial', sans-serif; /* Clean and modern font */
+  font-size: 14px; /* Comfortable readability */
+  color: #333; /* Neutral text color for readability */
+  line-height: 1.5; /* Adds spacing between lines for better readability */
+  text-align: center; /* Centers the text horizontally */
+  margin: 20px 0; /* Adds vertical spacing above and below */
+}
+
+/* Feedback-right styling */
+.feedback-right {
+  flex: 4;
+  max-width: 80%;
+  background-color: #ffffff;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px; /* Added margin for spacing */
+  box-sizing: border-box;
+}
+
+/* Rating boxes styling */
+/* .rating-boxes {
+  display: flex;
+  text-align: center;
+  justify-content: space-between; 
+  gap: 8px; 
+  margin: 10px 0;
+} */
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;  */
+  }
+  
+  .rating-boxes {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 8px; /* Space between buttons */
+    margin: 1px auto; /* Center the container within its parent */
+    width: fit-content; /* Adjust container width to fit its content */
+  }
+  
+  .rating-box {
+    width: 35px;
+    height: 35px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+  }
+  
+  .rating-box.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .rating-labels {
+    
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 15px; /* Space between buttons */
+    margin: 1px auto; /* Center the container within its parent */
+    width: fit-content; /* Adjust container width to fit its content */
+  }
+  
+  .rating-labels span {
+    width: fit-content; /* Match width to the rating-boxes */
+    /* text-align: center; */
+  }
+
+  .left-label{
+    font-size: small;
+    text-align: left;
+  }
+
+  .right-label{
+    
+    font-size: small;
+    text-align: right;
+  }
+  
+  .progress-bar-container {
+    text-align: center;
+    margin-bottom: 10px; /* Space between progress text and bar */
+  }
+  
+  .progress-text {
+    font-size: 14px;
+    color: #555; 
+    margin-bottom: 5px;
+  }
+  
+  .progress-bar {
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #4caf50; /* Progress bar color */
+    transition: width 0.3s ease;
+  }
+  
+  .adjusted-progress-bar {
+    margin-top: 20px; /* Adjust position for step === 7 */
+  }
+  
+
+/* Button container styling */
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+/* Thank-you section styling */
+.thank-you {
+  text-align: center;
+}
+
+.thank-you img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.thank-you h3 {
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.radio-options{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.radio-options label {
+    display: flex;
+    align-items: center; 
+    cursor: pointer; 
+  }
+
+  .circular-image {
+    width: 80%; /* Adjust the percentage based on the container or viewport */
+    aspect-ratio: 1 / 1; /* Ensures the height matches the width to maintain a square */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits the circle */
+    border: 0.5% solid #ccc; /* Optional: Adds a border with percentage units */
+    box-shadow: 0 4% 8% rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow in percentage */
+  }
+  
+  .submitButton{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
