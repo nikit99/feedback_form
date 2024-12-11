@@ -34,7 +34,7 @@ const App = () => {
 
   const handleSubmit = async () => {
     try {
-      await axios.post('http://localhost:5000/submit-feedback', {
+      await axios.post('https://feedback-form-backend-vret.onrender.com', {
         ratings,
         feedback,
       });
